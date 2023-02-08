@@ -61,7 +61,7 @@ body{
 }
 
 .card--text-container{
-  width: 42ch;
+  width: 60ch;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -78,20 +78,21 @@ body{
 
 .card--text-container h2{
   font-weight: 600;
-  font-size: .65rem;
+  font-size: .8rem;
   line-height: 14px;
   
 }
 .card--text-container h3{
   font-weight: 400;
-  font-size: .65rem;
+  font-size: .8rem;
   line-height: 13px;
   
 }
 
 .card--portrait{
   padding:1%;
-  height: 50vh;
+  width: 14%;
+  object-fit: scale-down;
   border-radius: 130px 130px 8px 8px;
 }
 
