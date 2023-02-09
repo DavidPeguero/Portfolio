@@ -40,6 +40,7 @@ body{
   display: flex;
   flex-direction: column;
   background : linear-gradient(120deg, #172A3A 0%, #004346 100%);
+  color: ghostwhite;
   margin-inline: 20px;
   padding: 20px;
   gap: 3rem;
@@ -51,7 +52,7 @@ body{
   flex-wrap:nowrap;
   overflow:hidden;
   width: 100%;
-  background-color: #508991;
+  background-color: #172A3A;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   margin: 0 auto auto auto;
   justify-content: center;
@@ -269,11 +270,20 @@ body{
 
 /*Contact Styling*/
 .contact--page-container{
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact--card-container{
   width: auto;
-  margin: 0 auto 0 0;
 }
+
+/*Message me styling*/
+.message-form{
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  gap: .5rem;
+}
+
 
