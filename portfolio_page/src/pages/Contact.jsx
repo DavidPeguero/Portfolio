@@ -2,24 +2,17 @@ import { useRef, useState } from "react"
 import emailjs from '@emailjs/browser';
 
 export default function Contact(){
-    // const [form, setForm] = useState({
-    //     name : "",
-    //     email : "",
-    //     subject: "",
-    //     message : ""
-    // })
-
     const form = useRef()
 
     function sendEmail(e){
         e.preventDefault();
-        console.log("im in")
         emailjs.sendForm('service_ic2dw5o', 'template_bmn0ax7', form.current, 'OWWs8F3jz65bhLtrz')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+      e.target.reset()
     }
 
     function handleChange(event){
