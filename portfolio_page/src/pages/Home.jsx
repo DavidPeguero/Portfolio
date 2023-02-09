@@ -5,14 +5,11 @@ import tenziesImg from "/src/assets/tenzies.png"
 import ProfilePic from "/src/assets/ProfilePic.jpg"
 import businessImg from "/src/assets/business-card.png"
 import dialagueDashImg from '/src/assets/dd-img.gif'
-import api from "../api/github"
 import { useEffect, useState } from 'react'
 
 
 
 export default function Home(){
-    const [user, setUser] = useState("")
-
 
     return(
     <div className="page--container">

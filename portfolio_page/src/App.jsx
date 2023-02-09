@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-rout
 import Home from "./pages/Home"
 import Contact from './pages/Contact';
 import Header from "/src/components/Header"
-import Builds from './pages/Builds';
 function App() {
 
   return (
@@ -12,10 +11,10 @@ function App() {
         <Route path="/" element={<Header />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="Builds" element={<Builds />} />
         </Route>
       </Routes>
     </BrowserRouter>
+    
   )
 }
 

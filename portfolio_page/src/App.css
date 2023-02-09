@@ -4,15 +4,15 @@
 }
 
 body{
-  background-color:black;
+  background-color:#09BC8A;
 }
 
 /*Header styling*/
 .header{
   display: flex;
-  height: 30px;
-  background-color: aliceblue;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  height: 50px;
+  background : #FFFAFF;
+  box-shadow: 0  0 5px 5px rgba(0,0,0,.2);
   align-items: center;
   padding: 0px 10px;
 }
@@ -39,9 +39,8 @@ body{
 .page--container{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background : linear-gradient(120deg, cyan 0%, #5db5ec 100%);
-  margin: 0px 10px;
+  background : linear-gradient(120deg, #172A3A 0%, #004346 100%);
+  margin-inline: 20px;
   padding: 20px;
   gap: 3rem;
 }
@@ -52,7 +51,7 @@ body{
   flex-wrap:nowrap;
   overflow:hidden;
   width: 100%;
-  background-color: white;
+  background-color: #508991;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   margin: 0 auto auto auto;
   justify-content: center;
@@ -62,6 +61,7 @@ body{
 
 .card--text-container{
   width: 60ch;
+  margin-top: 4%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -104,7 +104,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: white;
+  background-color: #508991;
   padding: 2rem;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   gap: 3px;
@@ -140,13 +140,6 @@ body{
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.face{
-}
-
-
-.project:hover{
-  
-}
 
 .project--text a{
   text-decoration: underline .07rem;
@@ -155,7 +148,7 @@ body{
 }
 
 :root {
-  --surface-color: #5db5ec;
+  --surface-color: #09BC8A;
   --curve: 40;
 }
 
@@ -245,8 +238,9 @@ body{
 
 .card__title {
   font-size: 1em;
-  margin: 0 0 .3em;
-  color: #fff;
+  margin: 0 0 .3em .5em;
+  color: black;
+  font-weight: 700;
 }
 
 .card__tagline {
@@ -254,18 +248,18 @@ body{
   margin: 1em 0;
   font-family: "MockFlowFont";  
   font-size: .8em; 
-  color: #fff;  
+  color: black;  
 }
 
 .card__status {
   font-size: .8em;
-  color: #fff;
+  color: black;
 }
 
 .card__description {
   padding: 0 2em 2em;
   margin: 0;
-  color: #fff;
+  color: black;
   font-family: "MockFlowFont";   
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -273,5 +267,13 @@ body{
   overflow: hidden;
 }    
 
+/*Contact Styling*/
+.contact--page-container{
+  height: 100vh;
+}
 
+.contact--card-container{
+  width: auto;
+  margin: 0 auto 0 0;
+}
 
