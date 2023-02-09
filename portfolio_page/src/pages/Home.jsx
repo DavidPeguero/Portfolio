@@ -22,14 +22,15 @@ export default function Home(){
             <div className='cards'>
                 <li>
                     <ProjectCard className="project--item"
+                    projectLink="https://github.com/DavidPeguero/Tenzies"
                     projectTools="React | CSS | JS | HTML"
                     projectName="Tenzies"
                     description="Tenzies is a game that involves matching 10 dice to the same number; you must freeze dice and roll the rest until all the frozen dice are the same value."
-                    img={tenziesImg}
-                    projectLink=""/>
+                    img={tenziesImg}/>
                 </li>
                 <li>
                     <ProjectCard className="project--item"
+                    projectLink="https://github.com/DavidPeguero/ReactBusinessCard"
                     projectTools="React | CSS | JS | HTML"
                     projectName="My Business Card"
                     description="A business card that I made in React as an exercise in css and React"
@@ -37,6 +38,7 @@ export default function Home(){
                 </li>
                 <li>
                     <ProjectCard className="project--item"
+                    projectLink="https://github.com/CWolfe1320/dialoguedash"
                     projectTools="Unity | C# | Wit.ai"
                     projectName="Dialogue Dash"
                     description="A game made in Unity that incorporates a spoken dialogue system to emulate the experience of being a waiter."

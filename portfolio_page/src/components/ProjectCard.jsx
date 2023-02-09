@@ -14,7 +14,7 @@ export default function ProjectCard(props){
         
         // </div>
         <div>
-            <a href="" className="card">
+            <a href={props.projectLink} className="card">
             <img src={props.img} className="card__image" alt="" />
             <div className="card__overlay">
                 <div className="card__header">
