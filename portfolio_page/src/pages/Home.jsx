@@ -1,51 +1,54 @@
+import React from "react";
+import './Home.css';
+import ProjectCard from "../components/ProjectCard";
+import myImg from "../assets/ProfilePic.jpg"
 import '../App.css'
-import PortraitCard from '../components/PortraitCard'
-import ProjectCard from '../components/ProjectCard'
-import tenziesImg from "/src/assets/tenzies.png"
-import ProfilePic from "/src/assets/ProfilePic.jpg"
-import businessImg from "/src/assets/business-card.png"
-import dialagueDashImg from '/src/assets/dd-img.gif'
-import { useEffect, useState } from 'react'
+import tenziesImg from '../assets/tenzies.png'
+import ddImg from '../assets/dd-img.gif'
+import businessImg from '../assets/business-card.png'
 
-
-
-export default function Home(){
-
-    return(
-    <div className="page--container">
-        <PortraitCard 
-        img={ProfilePic}
-        />
-        
-        <ul className='project--container'>
-            <h1 className='project--header'>Projects</h1>
-            <div className='cards'>
-                <li>
-                    <ProjectCard className="project--item"
-                    projectLink="https://github.com/DavidPeguero/Tenzies"
-                    projectTools="React | CSS | JS | HTML"
-                    projectName="Tenzies"
-                    description="Tenzies is a game that involves matching 10 dice to the same number; you must freeze dice and roll the rest until all the frozen dice are the same value."
-                    img={tenziesImg}/>
-                </li>
-                <li>
-                    <ProjectCard className="project--item"
-                    projectLink="https://github.com/DavidPeguero/ReactBusinessCard"
-                    projectTools="React | CSS | JS | HTML"
-                    projectName="My Business Card"
-                    description="A business card that I made in React as an exercise in css and React"
-                    img={businessImg}/>
-                </li>
-                <li>
-                    <ProjectCard className="project--item"
-                    projectLink="https://github.com/CWolfe1320/dialoguedash"
-                    projectTools="Unity | C# | Wit.ai"
-                    projectName="Dialogue Dash"
-                    description="A game made in Unity that incorporates a spoken dialogue system to emulate the experience of being a waiter."
-                    img={dialagueDashImg}/>
-                </li>
+export default function newHome(){
+    return (
+        <div className="page-style">
+            <div className="container bg-brown">
+                <header>
+                    <div className="header-text text-center">
+                        <h4>Howdy</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    </div>
+                    <img src={myImg} placeholder="MyPic"></img>
+                </header>
             </div>
-        </ul>        
-    </div>
+            <div className="container">
+                <ProjectCard 
+                bgColor="bg-dark"
+                title="Tenzie"
+                tools="React | CSS | JS | HTML"
+                description="Tenzies is a game that involves matching 10 dice to the same number; you must freeze dice and roll the rest until all the frozen dice are the same value."
+                imgFirst={false}
+                img={tenziesImg}
+                />
+            </div>
+            <div className="container">
+                <ProjectCard 
+                bgColor="bg-white"
+                title="React Business Card"
+                tools="React | CSS | JS | HTML"
+                description="A business card that I made in React as an exercise in CSS and React"
+                imgFirst={true}
+                img={businessImg}
+                />
+            </div>
+            <div className="container">
+                <ProjectCard 
+                    bgColor="bg-brown"
+                    title="DialogueDash"
+                    tools="Unity | C# | Wit.ai"
+                    description="A business card that I made in React as an exercise in css and React"
+                    imgFirst={false}
+                    img={ddImg}
+                />
+            </div>
+        </div>
     )
 }

@@ -2,13 +2,13 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route, BrowserRouter} from 'react-router-dom';
 import Home from "./pages/Home"
 import Contact from './pages/Contact';
-import Header from "/src/components/Header"
+import Navbar from "/src/components/Navbar"
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Header />}>
+        <Route path="/" element={<Navbar />}>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
         </Route>
