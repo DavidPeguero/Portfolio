@@ -5,7 +5,11 @@ export default function ProjectCard(props){
         <div>
             <section className={props.bgColor}>
                     <div className="split">
-                        {props.imgFirst && <img src={props.img} alt="Profile Pic" />}
+                        {props.imgFirst && <div className="split-img">
+                            
+                            <img src={props.img} alt="Profile Pic" />
+                            
+                        </div>}
                         <div className="split-text">
                             <h1>{props.title} </h1>
                             <hr className="solid" />
@@ -13,7 +17,9 @@ export default function ProjectCard(props){
                             <hr className='solid'></hr>
                             <p>{props.description}</p>
                         </div>
-                        {!props.imgFirst && <img src={props.img} alt="Profile Pic" />}
+                        <div className="split-img">
+                            {!props.imgFirst && <img src={props.img} alt="Profile Pic" />}
+                        </div>
                     </div>
             </section>
         </div>

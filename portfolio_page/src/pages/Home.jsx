@@ -12,11 +12,11 @@ export default function newHome(){
         <div className="page-style">
             <div className="container bg-brown">
                 <header>
-                    <div className="header-text text-center">
+                    <div className="header-text">
                         <h4>Howdy</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
-                    <img src={myImg} placeholder="MyPic"></img>
+                    <div className="header-img"><img src={myImg} placeholder="MyPic"></img></div>
                 </header>
             </div>
             <div className="container">

@@ -8,7 +8,7 @@ body{
 }
 
 /*Header styling*/
-.navbar{
+.navbar {
   display: flex;
   position:relative;
   height: 50px;
