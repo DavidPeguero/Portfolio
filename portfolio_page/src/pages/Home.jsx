@@ -6,15 +6,18 @@ import '../App.css'
 import tenziesImg from '../assets/tenzies.png'
 import ddImg from '../assets/dd-img.gif'
 import businessImg from '../assets/business-card.png'
+import ScrollTop from "../components/ScrollTop";
 
-export default function newHome(){
+export default function Home(){
     return (
         <div className="page-style">
             <div className="container bg-brown">
                 <header>
                     <div className="header-text">
-                        <h4>Howdy</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <h4>David Peguero</h4>
+                        <p>I love reading, programming, learning new skills, and video games. I am am a Full Stack dev with ambition in bettering UI/UX.
+                        
+                        </p>
                     </div>
                     <div className="header-img"><img src={myImg} placeholder="MyPic"></img></div>
                 </header>
@@ -49,6 +52,7 @@ export default function newHome(){
                     img={ddImg}
                 />
             </div>
+            <ScrollTop />
         </div>
     )
 }

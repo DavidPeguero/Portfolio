@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -287,4 +289,16 @@ body{
   gap: .5rem;
 }
 
-
+.scroll-up{
+   position: fixed; 
+   background-color: transparent;
+   border: transparent;
+   width: 100%;
+   left: 48%;
+   bottom: 35px;
+   height: 20px;
+   font-size: 3rem;
+   z-index: 1;
+   cursor: pointer;
+   color: grey;
+}
