@@ -11,7 +11,7 @@ export default function ProjectCard(props){
                             
                         </div>}
                         <div className="split-text">
-                            <h1><a href="" className="split-link">{props.title}</a> </h1>
+                            <h1><a href={props.link} className="split-link">{props.title}</a> </h1>
                             <hr className="solid" />
                             <h4>{props.tools}</h4>
                             <hr className='solid'></hr>

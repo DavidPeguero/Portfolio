@@ -152,14 +152,15 @@ section{
   max-width: 50rem;
 }
 
-
-/*Message me styling*/
-.message-form{
+.center-container{
   display: flex;
-  width: 400px;
-  flex-direction: column;
-  gap: .5rem;
+  flex: column;
+  justify-content: center;
+  align-items: center;
 }
+
+
+
 
 .scroll-up{
    position: fixed; 
@@ -197,6 +198,10 @@ section{
 .split-text p {
   font-weight:400;
   line-height:1.6;
+}
+
+.split-link{
+  color: var(--font-default)
 }
 
 

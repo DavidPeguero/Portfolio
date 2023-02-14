@@ -23,6 +23,7 @@ export default function Home(){
             <div className="container bg-dark">
                 <ProjectCard 
                 bgColor=""
+                link="https://david-peguero-tenzies.netlify.app/"
                 title="Tenzie"
                 tools="React | CSS | JS | HTML"
                 description="Tenzies is a game that involves matching 10 dice to the same number; you must freeze dice and roll the rest until all the frozen dice are the same value."
@@ -33,6 +34,7 @@ export default function Home(){
             <div className="container bg-white">
                 <ProjectCard 
                 bgColor=""
+                link="https://davidpegueroinfo.netlify.app/"
                 title="React Business Card"
                 tools="React | CSS | JS | HTML"
                 description="A business card that I made in React as an exercise in CSS and React"
@@ -43,6 +45,7 @@ export default function Home(){
             <div className="container bg-brown">
                 <ProjectCard 
                     bgColor=""
+                    link="https://github.com/CWolfe1320/dialoguedash"
                     title="DialogueDash"
                     tools="Unity | C# | Wit.ai"
                     description="A business card that I made in React as an exercise in css and React"
