@@ -1,0 +1,15 @@
+
+
+.container ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+@media (min-width: 40rem){
+    .template-container{
+        width: 100%;
+    }
+    
+}

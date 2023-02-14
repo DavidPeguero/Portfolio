@@ -1,4 +1,4 @@
-import '../pages/Home.css'
+import '../pages/Styles/Home.css'
 
 export default function ProjectCard(props){
     return (

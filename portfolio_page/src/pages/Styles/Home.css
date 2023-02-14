@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after{
+    box-sizing : border-box;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+img {
+    display:flex;
+    width:100%;
+    object-fit:contain;
+    max-height: 30rem;
+}
+
+section,
+header {
+    margin-inline:auto;
+    padding:3rem
+}
+header {
+    display:flex;
+    flex-direction:column;
+    padding:2rem
+}
+
+header *+* {
+    margin-top:1rem
+}
+.header-text {
+    display: flex;
+    flex-direction: column;
+    margin-left:10%;
+    text-align:left;
+    justify-content: center;
+    align-items: center;
+    
+    font-size:var(--font-decription-size);
+}
+header h4 {
+    font-weight:300
+    
+}
+header p {
+    max-width:30rem;
+
+    font-size:var(--font-header-size);
+    line-height:2rem;
+}
+
+
+@media (min-width: 40rem){
+    header{
+        flex-direction: row;
+    
+    }
+
+    .header-text{
+        flex-basis: 60%;
+    } 
+    
+}
+
+
+
+

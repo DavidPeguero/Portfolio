@@ -1,5 +1,7 @@
 import { useRef, useState } from "react"
 import emailjs from '@emailjs/browser';
+import './Styles/Contact.css'
+
 
 export default function Contact(){
     const form = useRef()
@@ -23,15 +25,16 @@ export default function Contact(){
     }
 
     return(
-        <div className="page--container contact--page-container">
-            <div className="card--container contact--card-container">
+        <div className="page-style">
+            <div className="container bg-brown">
                 <ul>
+                    <h3>Contact Links</h3>
                     <li>Email: david.peguero.cancel@gmail.com</li>
                     <li>LinkedIn : <a href="https://www.linkedin.com/in/david-peguero">david-peguero</a></li>
                     <li>Github: <a href="https://www.github.com/DavidPeguero">DavidPeguero</a></li>
                 </ul>
             </div>
-            <div className="card-container">
+            <div className="container form-style bg-dark">
                 <form onSubmit={sendEmail} ref={form} className="message-form">
                     <h4>Name</h4>
                     <input type="text" name="name" onChange={(event) => handleChange(event)} placeholder="Name" required></input>

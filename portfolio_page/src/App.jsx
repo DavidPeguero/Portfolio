@@ -14,6 +14,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
+      <ScrollTop />
     </BrowserRouter>
     
   )
