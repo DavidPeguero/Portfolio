@@ -5,6 +5,8 @@ import Contact from './pages/Contact';
 import Navbar from "/src/components/Navbar"
 import ScrollTop from "/src/components/ScrollTop"
 function App() {
+  
+
   return (
     <BrowserRouter>
       <Routes>

@@ -17,7 +17,6 @@ const ScrollButton = () =>{
   };
   
   useEffect(()=>{
-    console.log(`Scrolled: ${scrolled} Visible : ${visible}`)
     toggleVisible();
     window.addEventListener('scroll', toggleVisible);
     return () => window.removeEventListener("scroll", toggleVisible);

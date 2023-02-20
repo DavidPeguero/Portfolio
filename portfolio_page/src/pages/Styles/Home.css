@@ -27,18 +27,23 @@ header {
     padding:2rem
 }
 
+.header-img{
+    
+    z-index: 1000;
+}
 header *+* {
     margin-top:1rem
 }
 .header-text {
     display: flex;
+    position: relative;
     flex-direction: column;
     margin-left:10%;
     text-align:left;
     justify-content: center;
     align-items: center;
-    
     font-size:var(--font-decription-size);
+    
 }
 header h4 {
     font-weight:300
@@ -51,7 +56,54 @@ header p {
     line-height:2rem;
 }
 
+header h1,p{
+    z-index: 10000;
+}
 
+.diagonal-text-flourish{
+    position:absolute;
+    width: 90vw;
+    height: 110%;
+    background-color: red;
+    transform: translateX(-100%);
+    transition: ease-in-out .5s;
+    opacity: .5;
+    z-index: 1000;
+  }
+  
+
+.split-flourish{
+    right: 0;
+    position: absolute;
+    transform: translateX(-120%);
+    width: 120%;
+    height: 100%;
+    transition: ease-in-out .5s;
+}
+
+.split-flourish-reverse{
+    left: 0;
+    transform: translateX(120%);
+}
+
+.split h1,h2,h3,h4,p,img{
+    z-index: 2000;
+}
+
+.split-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+  .container:hover .diagonal-text-flourish{
+    transform: translateX(0%);
+  }
+  
+  .container:hover .split-flourish{
+    transform: translateX(0%);
+  }
 
 
 @media (min-width: 40rem){

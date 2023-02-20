@@ -44,6 +44,10 @@ section{
   border-top:solid 1px black;
 }
 
+.bg-orange{
+  background-color: orange;
+}
+
 .page-style{
   font-family: var(--font-primary);
   font-weight: 400;
@@ -67,6 +71,7 @@ section{
 .navbar--logo{
   font-size: 80%;
   margin-right: auto;
+  
 }
 
 
@@ -97,8 +102,6 @@ section{
     opacity: .7;
     inset: 0 0 0 80%;
     height: auto;
-    
-    z-index: 10;
     padding-top: 1.5rem;
 
     
@@ -128,7 +131,6 @@ section{
     padding: 9px;
     left: 94%;
     margin: 1rem .3rem 0 auto;
-    z-index: 1000;
   }
 
 
@@ -162,6 +164,8 @@ section{
 
 
 
+
+
 .scroll-up{
    position: fixed; 
    background-color: transparent;
@@ -181,6 +185,7 @@ section{
   display:flex;
   flex-direction:column;
   gap:2rem;
+  
 }
 .split-text {
   display:flex;
