@@ -103,7 +103,7 @@ section{
     inset: 0 0 0 80%;
     height: auto;
     padding-top: 1.5rem;
-
+    z-index: 5000;
     
   }
 
@@ -131,6 +131,7 @@ section{
     padding: 9px;
     left: 94%;
     margin: 1rem .3rem 0 auto;
+    z-index: 10000;
   }
 
 
@@ -175,7 +176,7 @@ section{
    bottom: 35px;
    height: 20px;
    font-size: 3rem;
-   z-index: 1;
+   z-index: 100000;
    cursor: pointer;
    color: grey;
 }

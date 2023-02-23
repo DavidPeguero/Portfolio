@@ -25,7 +25,9 @@ header {
 header {
     display:flex;
     flex-direction:column;
-    padding:2rem
+    padding:2rem;
+    gap: 2rem
+    
 }
 
 .header-img{
@@ -64,13 +66,18 @@ header h1,p{
 
 .diagonal-text-flourish{
     position:absolute;
-    width: 90vw;
-    height: 110%;
+    width: 110%;
+    height: 100%;
+    left: -5;
     background-color: red;
-    transform: translateX(-100%);
+    transform: scale(0%);
     transition: ease-in-out .5s;
     opacity: .5;
     z-index: 1000;
+  }
+
+  .container:hover .diagonal-text-flourish{
+    transform: scale(100%);
   }
   
 
@@ -99,9 +106,7 @@ header h1,p{
     align-items: center;
 }   
 
-  .container:hover .diagonal-text-flourish{
-    transform: translateX(0%);
-  }
+  
   
   .container:hover .split-flourish{
     transform: translateX(0%);
@@ -113,6 +118,18 @@ header h1,p{
         flex-direction: row;
     
     }
+
+    .diagonal-text-flourish{
+        position:absolute;
+        width: 100%;
+        height: 60%;
+        left: -5;
+        background-color: red;
+        transform: scale(0%);
+        transition: ease-in-out .5s;
+        opacity: .5;
+        z-index: 1000;
+      }
 
     .header-text{
         flex-basis: 60%;
