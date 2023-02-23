@@ -6,6 +6,7 @@ import '../App.css'
 import tenziesImg from '../assets/tenzies.png'
 import ddImg from '../assets/dd-img.gif'
 import businessImg from '../assets/business-card.png'
+import ygoImg from '../assets/ygo.png'
 
 export default function Home(){
     useEffect(()=>{
@@ -52,23 +53,9 @@ export default function Home(){
             inline: 'center',
         })
     }
-
+    console.log("Hi")
     return (
         <div className="page-style">
-            {/* <nav className="table-of-contents">
-                <button onClick={handleScrollToHeader}>
-                Header
-                </button>
-                <button onClick={handleScrollToP1}>
-                Tenzies
-                </button>
-                <button onClick={handleScrollToP2}>
-                React Business Card
-                </button>
-                <button onClick={handleScrollToP3}>
-                Dialogue Dash
-                </button>
-            </nav> */}
             <div className="container bg-brown" ref={header}>
                 <header>
                     <div className="header-text">
@@ -79,6 +66,20 @@ export default function Home(){
                     </div>
                     <div className="header-img"><img src={myImg} placeholder="MyPic"></img></div>
                 </header>
+            </div>
+            <div className="container bg-white">
+                <ProjectCard 
+                    bgColor=""
+                    link="https://github.com/DavidPeguero/Yugioh-BanListChangeScraper/releases/tag/1.0.0"
+                    title="YGO-Forbidden/Limited List Checker"
+                    tools="Python | JSON | Web Scraping"
+                    description="A program that scrapes Konami's list for the banned cards in the Yugiog Trading Card Game
+                    and displays them in a table. It allows for searching cards, displaying images to see what they do, and it can scrap 
+                    any of the Konami ban lists, not just the most recent "
+                    imgFirst={true}
+                    img={ygoImg }
+                    reverse={true}
+                />
             </div>
             <div className="container bg-dark" ref={project1}>
                 <ProjectCard 
@@ -92,7 +93,7 @@ export default function Home(){
                 reverse={false}
                 />
             </div>
-            <div className="container bg-white" ref={project2}>
+            <div className="container bg-brown" ref={project2}>
                 <ProjectCard 
                 bgColor=""
                 link="https://davidpegueroinfo.netlify.app/"
@@ -104,7 +105,7 @@ export default function Home(){
                 reverse={true}
                 />
             </div>
-            <div className="container bg-brown" ref={project3}>
+            <div className="container bg-white" ref={project3}>
                 <ProjectCard 
                     bgColor=""
                     link="https://github.com/CWolfe1320/dialoguedash"
