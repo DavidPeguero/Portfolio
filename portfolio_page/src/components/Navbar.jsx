@@ -26,6 +26,9 @@ export default function Navbar(){
                         <li>
                             <Link className="navbar--page" to='/contact'>Contact</Link>
                         </li>
+                        <li>
+                            <Link className="navbar--page" to='/contact'>Resume</Link>
+                        </li>
                     </ul>
             </nav> 
             <Outlet />

@@ -7,6 +7,8 @@ import tenziesImg from '../assets/tenzies.png'
 import ddImg from '../assets/dd-img.gif'
 import businessImg from '../assets/business-card.png'
 import ygoImg from '../assets/ygo.png'
+import moImg from '../assets/mental-oasis.png'
+import disImg from '../assets/discover-main.png'
 
 export default function Home(){
     useEffect(()=>{
@@ -20,6 +22,8 @@ export default function Home(){
     const project1 = useRef(null)
     const project2 = useRef(null)
     const project3 = useRef(null)
+    const project4 = useRef(null)
+    const project5 = useRef(null)
 
 
     function handleScrollToHeader(){
@@ -116,6 +120,34 @@ export default function Home(){
                                 and relay orders and is paid according to performance. "
                     imgFirst={false}
                     img={ddImg}
+                    reverse={false}
+                />
+            </div>
+            <div className="container bg-dark" ref={project4}>
+                <ProjectCard 
+                    bgColor=""
+                    link="https://github.com/CoolJH2K/dis-cover-music"
+                    title="dis(Cover-Music)"
+                    tools="Unity | C# | Wit.ai"
+                    description="Game built on the Unity engine that integrates a Wit.ai based spoken dialogue
+                                system to simulate the experience of being a waiter. The player must be able to take
+                                and relay orders and is paid according to performance. "
+                    imgFirst={true}
+                    img={disImg}
+                    reverse={true}
+                />
+            </div>
+            <div className="container bg-brown" ref={project5}>
+                <ProjectCard 
+                    bgColor=""
+                    link="https://github.com/DavidPeguero/Mental-Oasis"
+                    title="Mental Oasis"
+                    tools="Handlebars | mySQL | Node.js | Express.js"
+                    description="Game built on the Unity engine that integrates a Wit.ai based spoken dialogue
+                                system to simulate the experience of being a waiter. The player must be able to take
+                                and relay orders and is paid according to performance. "
+                    imgFirst={false}
+                    img={moImg}
                     reverse={false}
                 />
             </div>
