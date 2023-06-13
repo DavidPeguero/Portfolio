@@ -9,68 +9,38 @@ import businessImg from '../assets/business-card.png'
 import ygoImg from '../assets/ygo.png'
 import moImg from '../assets/mental-oasis.png'
 import disImg from '../assets/discover-main.png'
+import superImg from '../assets/hero-showdown.png'
+
 
 export default function Home(){
-    useEffect(()=>{
-        console.log("Mount")
-        return () =>{
-            console.log("Unmount")
-        }
-    }, [])
 
-    const header = useRef(null)
-    const project1 = useRef(null)
-    const project2 = useRef(null)
-    const project3 = useRef(null)
-    const project4 = useRef(null)
-    const project5 = useRef(null)
-
-
-    function handleScrollToHeader(){
-        header.current.scrollIntoView({
-            behavior : 'smooth',
-            block:'start',
-            inline: 'center',
-        })
-    }
-
-    function handleScrollToP1(){
-        project1.current.scrollIntoView({
-            behavior : 'smooth',
-            block:'start',
-            inline: 'center',
-        })
-    }
-
-    function handleScrollToP2(){
-        project2.current.scrollIntoView({
-            behavior : 'smooth',
-            block:'start',
-            inline: 'center',
-        })
-    }
-
-    function handleScrollToP3(){
-        project3.current.scrollIntoView({
-            behavior : 'smooth',
-            block: 'start',
-            inline: 'center',
-        })
-    }
-    console.log("Hi")
+    
     return (
         <div className="page-style">
-            <div className="container bg-brown" ref={header}>
+            <div className="container bg-brown">
                 <header>
                     <div className="header-text">
                         <h1 className="text-3xl underline">David Peguero</h1>
                         <p>I love reading, programming, learning new skills, and video games. I am am a Full Stack developer with a passion for learning new things. I am currently looking for a job as a developer. 
                         </p>
                     </div>
-                    <div className="header-img"><img src={myImg} placeholder="MyPic"></img></div>
+                    <div className="header-img"><img src={myImg} alt="David Peguero Pic" placeholder="MyPic"></img></div>
                 </header>
             </div>
             <div className="container bg-white">
+                <ProjectCard 
+                    bgColor=""
+                    link="https://github.com/Suzakijun1/Higher-Lower-Game"
+                    title="Superhero Showdown"
+                    tools="GraphQL | React | Node.js | Express | MongoDB | Heroku"
+                    description="A website that allows users to create their own superhero and battle them against other users' superheroes. 
+                    It also has another game mode which allows you to compare superheroes by their stats and see how long you can guess correctly without losing."
+                    imgFirst={true}
+                    img={superImg }
+                    reverse={true}
+                />
+            </div>
+            <div className="container bg-dark">
                 <ProjectCard 
                     bgColor=""
                     link="https://github.com/DavidPeguero/Yugioh-BanListChangeScraper/releases/tag/1.0.0"
@@ -84,7 +54,7 @@ export default function Home(){
                     reverse={true}
                 />
             </div>
-            <div className="container bg-dark" ref={project1}>
+            <div className="container bg-brown">
                 <ProjectCard 
                 bgColor=""
                 link="https://david-peguero-tenzies.netlify.app/"
@@ -96,7 +66,7 @@ export default function Home(){
                 reverse={false}
                 />
             </div>
-            <div className="container bg-brown" ref={project2}>
+            <div className="container bg-white">
                 <ProjectCard 
                 bgColor=""
                 link="https://davidpeguero.com/"
@@ -108,7 +78,7 @@ export default function Home(){
                 reverse={true}
                 />
             </div>
-            <div className="container bg-white" ref={project3}>
+            <div className="container bg-dark">
                 <ProjectCard 
                     bgColor=""
                     link="https://github.com/CWolfe1320/dialoguedash"
@@ -122,7 +92,7 @@ export default function Home(){
                     reverse={false}
                 />
             </div>
-            <div className="container bg-dark " ref={project4}>
+            <div className="container bg-brown ">
                 <ProjectCard 
                     bgColor=""
                     link="https://github.com/CoolJH2K/dis-cover-music"
@@ -135,7 +105,7 @@ export default function Home(){
                     reverse={true}
                 />
             </div>
-            <div className="container bg-brown" ref={project5}>
+            <div className="container bg-white">
                 <ProjectCard 
                     bgColor=""
                     link="https://github.com/DavidPeguero/Mental-Oasis"
