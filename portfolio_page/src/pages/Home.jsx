@@ -64,8 +64,8 @@ export default function Home(){
                 <header>
                     <div className="header-text">
                         <div className="diagonal-text-flourish"></div>
-                        <h1>David Peguero</h1>
-                        <p>I love reading, programming, learning new skills, and video games. I am am a Full Stack dev with ambition in bettering UI/UX.
+                        <h1 className="text-3xl underline">David Peguero</h1>
+                        <p>I love reading, programming, learning new skills, and video games. I am am a Full Stack developer with a passion for learning new things. I am currently looking for a job as a developer. 
                         </p>
                     </div>
                     <div className="header-img"><img src={myImg} placeholder="MyPic"></img></div>
@@ -123,15 +123,14 @@ export default function Home(){
                     reverse={false}
                 />
             </div>
-            <div className="container bg-dark" ref={project4}>
+            <div className="container bg-dark " ref={project4}>
                 <ProjectCard 
                     bgColor=""
                     link="https://github.com/CoolJH2K/dis-cover-music"
                     title="dis(Cover-Music)"
-                    tools="Unity | C# | Wit.ai"
-                    description="Game built on the Unity engine that integrates a Wit.ai based spoken dialogue
-                                system to simulate the experience of being a waiter. The player must be able to take
-                                and relay orders and is paid according to performance. "
+                    tools="HTML | APIs | CSS | JS"
+                    description="Website that allows for easily finding covers to music that you love. Simply input the song you want and it will
+                     displays options on a carousel for you."
                     imgFirst={true}
                     img={disImg}
                     reverse={true}
@@ -143,9 +142,8 @@ export default function Home(){
                     link="https://github.com/DavidPeguero/Mental-Oasis"
                     title="Mental Oasis"
                     tools="Handlebars | mySQL | Node.js | Express.js"
-                    description="Game built on the Unity engine that integrates a Wit.ai based spoken dialogue
-                                system to simulate the experience of being a waiter. The player must be able to take
-                                and relay orders and is paid according to performance. "
+                    description="Mental Health Tracker that resets everyday and logs how you did each day through coloring a calendar on the dashboard.
+                    The applicaition also allows for creating journal entries to keep track of your days."
                     imgFirst={false}
                     img={moImg}
                     reverse={false}

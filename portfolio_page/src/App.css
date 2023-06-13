@@ -27,6 +27,10 @@ section{
 
 /*Bg Presets*/
 
+body{
+  background-color: var(--bg-dark);
+}
+
 .bg-white{
   background-color: var(--bg-white);
 }
