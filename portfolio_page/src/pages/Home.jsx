@@ -63,7 +63,6 @@ export default function Home(){
             <div className="container bg-brown" ref={header}>
                 <header>
                     <div className="header-text">
-                        <div className="diagonal-text-flourish"></div>
                         <h1 className="text-3xl underline">David Peguero</h1>
                         <p>I love reading, programming, learning new skills, and video games. I am am a Full Stack developer with a passion for learning new things. I am currently looking for a job as a developer. 
                         </p>
